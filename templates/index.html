@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="wrap container" role="document">
+  <div class="content">
+    <section class="section container-fluid mt-n3 pb-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-0">{{ section.title | replace(from="Shor", to="<span style='color:blue'>Shor</span>") |safe}}</h1>
+        </div>
+        <div class="col-lg-9 col-xl-8 text-center">
+          <p class="lead">{{ section.extra.lead | safe }}</p>
+          <div class="boxrow">
+              <div class="box">
+                <h3>
+                    <div class="boxdiv">Logical Qubits</div>
+                    <div class="crit-val">{{section.extra.logical_qubits}}</div>
+                </h3>
+                </div>
+              <div class="box">
+                <h3>
+                    <div class="boxdiv">Gate Error Rate</div>
+                    <div class="green-val">{{section.extra.error}}</div>
+                </h3>
+              </div>
+              <div class="box">
+                <h3>
+                    <div class="boxdiv">Integrated Qubits</div>
+                    <div class="crit-val">{{section.extra.integrated_qubits}}</div>
+                </h3>
+              </div>
+          </div>
+          <div class="boxrow">
+              <div class="box">
+                <h3>
+                    <div class="boxdiv">Need¹</div>
+                    <div>{{section.extra.qubits_needed}}</div>
+                </h3>
+              </div>
+              <div class="box">
+                <h3>
+                    <div class="boxdiv">Need²</div>
+                    <div>{{section.extra.error_needed}}</div>
+                </h3>
+              </div>
+              <div class="box">
+                <h3>
+                    <div class="boxdiv">Need³</div>
+                    <div>{{section.extra.needed_for_logical_qubit}}</div>
+                </h3>
+              </div>
+          </div>
+          <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ get_url(path=section.extra.url | default(value="/")) | safe }}" role="button">{{ section.extra.url_button | default(value="Get started") }}</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+{% endblock content %}
