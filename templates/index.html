@@ -12,7 +12,7 @@
           <div class="boxrow">
               <div class="box">
                 <h3>
-                    <div class="boxdiv">Logical Qubits</div>
+                    <div class="boxdiv">Logical Qubits &nbsp;</div>
                     <div class="crit-val">{{section.extra.logical_qubits}}</div>
                 </h3>
                 </div>
@@ -25,26 +25,26 @@
               <div class="box">
                 <h3>
                     <div class="boxdiv">Integrated Qubits</div>
-                    <div class="crit-val">{{section.extra.integrated_qubits}}</div>
+                    <div class="crit-val">{{section.extra.integrated_qubits}}<sup>(4)</sup></div>
                 </h3>
               </div>
           </div>
           <div class="boxrow">
               <div class="box">
                 <h3>
-                    <div class="boxdiv">Need¹</div>
+                    <div class="boxdiv">Need<sup>(1)</sup></div>
                     <div>{{section.extra.qubits_needed}}</div>
                 </h3>
               </div>
               <div class="box">
                 <h3>
-                    <div class="boxdiv">Need²</div>
+                    <div class="boxdiv">Need<sup>(2)</sup></div>
                     <div>{{section.extra.error_needed}}</div>
                 </h3>
               </div>
               <div class="box">
                 <h3>
-                    <div class="boxdiv">Need³</div>
+                    <div class="boxdiv">Need<sup>(3)</sup></div>
                     <div>{{section.extra.needed_for_logical_qubit}}</div>
                 </h3>
               </div>
@@ -53,6 +53,10 @@
         </div>
       </div>
     </section>
+   <div style="font-size:12px"><sup>1</sup>For breaking RSA, based on <a href='https://arxiv.org/abs/1905.09749'>Factoring 2048-bit Numbers in 8 hours using 20 million qubits</a></div>
+   <div style="font-size:12px"><sup>2</sup>Needs means: 'this is good enough'. Smaller values can reduce needed number of qubits for a single logical qubit.</div>
+   <div style="font-size:12px"><sup>3</sup>This is the number of needed qubits for a logical qubit based on the error rate and the number of operations expected to be performed. (<a href='https://arxiv.org/abs/1905.09749'>Factoring 2048-bit Numbers in 8 hours using 20 million qubits</a>)</div></div>
+   <div style="font-size:12px"><sup>4</sup>Based on <a href="https://journals.aps.org/prx/abstract/10.1103/PhysRevX.12.011040">Dual-Element, Two-Dimensional Atom Array with Continuous-Mode Operation</a></div>
   </div>
 </div>
 {% endblock content %}

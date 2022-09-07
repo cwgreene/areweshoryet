@@ -4,7 +4,7 @@ title = "Are We Shor Yet?"
 description = "'Are We Shor Yet?' tracks the state of Quantum Computing."
 
 # The site theme to use.
-theme = "adidoks"
+#theme = "adidoks"
 
 # The default language; used in feeds and search index
 # Note: the search index doesn't support Chinese/Japanese/Korean Languages
