@@ -13,7 +13,7 @@
               <div class="box">
                 <h3>
                     <div class="boxdiv">Logical Qubits &nbsp;</div>
-                    <div class="crit-val">{{section.extra.logical_qubits}}</div>
+                        <div class="crit-val">{{section.extra.logical_qubits}}<sup>(4)</sup></div>
                 </h3>
                 </div>
               <div class="box">
@@ -25,7 +25,7 @@
               <div class="box">
                 <h3>
                     <div class="boxdiv">Integrated Qubits</div>
-                    <div class="crit-val">{{section.extra.integrated_qubits}}<sup>(4)</sup></div>
+                    <div class="crit-val">{{section.extra.integrated_qubits}}<sup>(6)</sup></div>
                 </h3>
               </div>
           </div>
@@ -55,8 +55,9 @@
    <div style="font-size:12px"><sup>1</sup>For breaking RSA, based on <a href='https://arxiv.org/abs/1905.09749'>Factoring 2048-bit Numbers in 8 hours using 20 million qubits</a></div>
    <div style="font-size:12px"><sup>2</sup>Needs means: 'this is good enough'. Smaller values can reduce needed number of qubits for a single logical qubit.</div>
    <div style="font-size:12px"><sup>3</sup>This is the number of needed qubits for a logical qubit based on the error rate and the number of operations expected to be performed. (<a href='https://arxiv.org/abs/1905.09749'>Factoring 2048-bit Numbers in 8 hours using 20 million qubits</a>)</div></div>
-   <div style="font-size:12px"><sup>4</sup>Based on <a href="https://en.wikipedia.org/wiki/IBM_Heron">IBM Heron</a>. Hasn't demonstrated QECC, but eh. You can actually deploy code to it.</div>
-   <div style="font-size:12px"><sup>5</sup>Based on <a href="https://blog.google/technology/research/google-willow-quantum-chip/">Google's Willow</a></div>
+   <div style="font-size:12px"><sup>4</sup>Google has declared that they are going to call a qubit that has a 1 in a million (2?) gate error rate to be a logical qubit. Sure, why not.</a></div>
+   <div style="font-size:12px"><sup>5</sup>Based on <a href="https://blog.google/technology/research/google-willow-quantum-chip/">Google's Willow</a>. Since it sounds like they have scalable error correction at .3%, this might get turned to green.</div>
+   <div style="font-size:12px"><sup>6</sup>Based on <a href="https://en.wikipedia.org/wiki/IBM_Heron">IBM Heron</a>. Hasn't demonstrated QECC, but eh. You can actually deploy code to it.</div>
   </div>
 </div>
 {% endblock content %}
