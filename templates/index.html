@@ -19,7 +19,7 @@
               <div class="box">
                 <h3>
                     <div class="boxdiv">Gate Error Rate</div>
-                    <div class="green-val">{{section.extra.error}}</div>
+                    <div class="yellow-val">{{section.extra.error}}<sup>(5)</sup></div>
                 </h3>
               </div>
               <div class="box">
@@ -55,7 +55,8 @@
    <div style="font-size:12px"><sup>1</sup>For breaking RSA, based on <a href='https://arxiv.org/abs/1905.09749'>Factoring 2048-bit Numbers in 8 hours using 20 million qubits</a></div>
    <div style="font-size:12px"><sup>2</sup>Needs means: 'this is good enough'. Smaller values can reduce needed number of qubits for a single logical qubit.</div>
    <div style="font-size:12px"><sup>3</sup>This is the number of needed qubits for a logical qubit based on the error rate and the number of operations expected to be performed. (<a href='https://arxiv.org/abs/1905.09749'>Factoring 2048-bit Numbers in 8 hours using 20 million qubits</a>)</div></div>
-   <div style="font-size:12px"><sup>4</sup>Based on <a href="https://journals.aps.org/prx/abstract/10.1103/PhysRevX.12.011040">Dual-Element, Two-Dimensional Atom Array with Continuous-Mode Operation</a></div>
+   <div style="font-size:12px"><sup>4</sup>Based on <a href="https://en.wikipedia.org/wiki/IBM_Heron">IBM Heron</a>. Hasn't demonstrated QECC, but eh. You can actually deploy code to it.</div>
+   <div style="font-size:12px"><sup>5</sup>Based on <a href="https://blog.google/technology/research/google-willow-quantum-chip/">Google's Willow</a></div>
   </div>
 </div>
 {% endblock content %}

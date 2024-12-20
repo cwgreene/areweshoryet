@@ -10,11 +10,11 @@ repo_version = "GitHub v0.1.0"
 repo_license = "Open-source MIT License."
 repo_url = "https://github.com/cwgreene/areweshoryet"
 
-error = ".1%"
+error = ".3%"
 error_needed = ".1%"
 logical_qubits = "0"
 qubits_needed = "14238"
-integrated_qubits = "512"
+integrated_qubits = "156"
 needed_for_logical_qubit = "1538"
 
 [[extra.footnotes]]
